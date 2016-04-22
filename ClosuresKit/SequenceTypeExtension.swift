@@ -23,4 +23,16 @@ extension SequenceType{
         }
         return nil
     }
+    
+    public func cs_any(@noescape condition:(Self.Generator.Element) throws -> Bool) rethrows -> Bool{
+        for element in self {
+            if try condition(element) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    
+    
 }
