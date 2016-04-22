@@ -37,6 +37,15 @@ extension SequenceType{
         return false
     }
     
+    public func cs_all(@noescape condition:(Self.Generator.Element) throws -> Bool) rethrows -> Bool{
+        for element in self {
+            if try !condition(element) {
+                return false
+            }
+        }
+        return true
+    }
+    
     
     
 }
