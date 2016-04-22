@@ -19,4 +19,11 @@ class SequenceExtensionTests: XCTestCase {
         }
         assert(result==5,"match failed")
     }
+    
+    func testAny() {
+        let result = testSequence.cs_any { (value) -> Bool in
+            return value > 10
+        }
+        assert(result == false, "any failed")
+    }
 }
