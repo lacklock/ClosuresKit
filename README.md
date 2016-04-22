@@ -1,5 +1,5 @@
 # ClosuresKit
-
+![Build Status](https://travis-ci.org/lacklock/ClosuresKit.svg)
 ![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
