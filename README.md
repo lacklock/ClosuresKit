@@ -4,6 +4,12 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
 
+This project is heavily inspired by the popular [BlocksKit](https://github.com/zwaldowski/BlocksKit).
+
+#Installation
+
+###Carthage
+<code>github "github "lacklock/ClosuresKit""</code>
 
 #Contact
 
