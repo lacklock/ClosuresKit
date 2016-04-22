@@ -11,7 +11,7 @@ import Foundation
 extension SequenceType{
     
     /**
-     loops through sequeence to find the match element
+     loops through the sequeence to find the match element
      it's will stop and return on the first match
      if thers isn't any element match, return nil
      */
@@ -24,6 +24,10 @@ extension SequenceType{
         return nil
     }
     
+    /**
+     Loops through the sequeence to find whether any object matches the closure.
+     
+     */
     public func cs_any(@noescape condition:(Self.Generator.Element) throws -> Bool) rethrows -> Bool{
         for element in self {
             if try condition(element) {
