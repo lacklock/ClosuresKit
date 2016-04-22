@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "161CA4A1124386E7D6265D9FD62450BEF35EB0B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "161CA4A1124386E7D6265D9FD62450BEF35EB0B6" : 0,
+    "07254622BEE060C7EAAC3369009E9ED24D387F35" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "368B091F-DCD6-4D00-AE48-67BEC991249B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "161CA4A1124386E7D6265D9FD62450BEF35EB0B6" : "ClosuresKit\/",
+    "07254622BEE060C7EAAC3369009E9ED24D387F35" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClosuresKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClosuresKit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/trawor\/XToDo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "07254622BEE060C7EAAC3369009E9ED24D387F35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lacklock\/ClosuresKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "161CA4A1124386E7D6265D9FD62450BEF35EB0B6"
+    }
+  ]
+}
