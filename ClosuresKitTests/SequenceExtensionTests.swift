@@ -31,13 +31,16 @@ class SequenceExtensionTests: XCTestCase {
         let result = testSequence.cs_none { (value) -> Bool in
             return value > 10
         }
-        assert(result == false, "none failed")
+        assert(result, "none failed")
     }
     
     func testAll() {
-        let result = testSequence.cs_all { (value) -> Bool in
+        var result = testSequence.cs_all { (value) -> Bool in
             return value > 10
         }
+        assert(result == false, "all failed")
+        
+        result = testSequence.cs_all({$0 > 0})
         assert(result, "all failed")
     }
 }
