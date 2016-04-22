@@ -37,6 +37,11 @@ extension SequenceType{
         return false
     }
     
+    
+    /** 
+     Loops through an sequeence to find whether all element match the closure
+     
+     */
     public func cs_all(@noescape condition:(Self.Generator.Element) throws -> Bool) rethrows -> Bool{
         for element in self {
             if try !condition(element) {
@@ -46,6 +51,17 @@ extension SequenceType{
         return true
     }
     
-    
+    /**
+     Loops through an sequeence to find whether no element match the closure
+     
+     */
+    public func cs_none(@noescape condition:(Self.Generator.Element) throws -> Bool) rethrows -> Bool{
+        for element in self {
+            if try condition(element) {
+                return false
+            }
+        }
+        return true
+    }
     
 }

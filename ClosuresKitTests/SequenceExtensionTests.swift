@@ -26,4 +26,18 @@ class SequenceExtensionTests: XCTestCase {
         }
         assert(result == false, "any failed")
     }
+    
+    func testNone() {
+        let result = testSequence.cs_none { (value) -> Bool in
+            return value > 10
+        }
+        assert(result == false, "none failed")
+    }
+    
+    func testAll() {
+        let result = testSequence.cs_all { (value) -> Bool in
+            return value > 10
+        }
+        assert(result, "all failed")
+    }
 }
