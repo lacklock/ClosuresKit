@@ -11,6 +11,8 @@
 		3A22A1B41CCA205000AC78DF /* ClosuresKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A22A1A91CCA205000AC78DF /* ClosuresKit.framework */; };
 		3A22A1C41CCA226800AC78DF /* SequenceTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1C31CCA226800AC78DF /* SequenceTypeExtension.swift */; };
 		3A22A1C71CCA28D200AC78DF /* SequenceExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */; };
+		3A22A1C91CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */; };
+		3A22A1CB1CCD038500AC78DF /* AssocaitedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		3A22A1BA1CCA205000AC78DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A22A1C31CCA226800AC78DF /* SequenceTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtension.swift; sourceTree = "<group>"; };
 		3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensionTests.swift; sourceTree = "<group>"; };
+		3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectAssociatedExtension.swift; sourceTree = "<group>"; };
+		3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssocaitedObjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 				3A22A1AC1CCA205000AC78DF /* ClosuresKit.h */,
 				3A22A1AE1CCA205000AC78DF /* Info.plist */,
 				3A22A1C31CCA226800AC78DF /* SequenceTypeExtension.swift */,
+				3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */,
 			);
 			path = ClosuresKit;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */,
+				3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */,
 				3A22A1BA1CCA205000AC78DF /* Info.plist */,
 			);
 			path = ClosuresKitTests;
@@ -198,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A22A1C41CCA226800AC78DF /* SequenceTypeExtension.swift in Sources */,
+				3A22A1C91CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A22A1CB1CCD038500AC78DF /* AssocaitedObjectTests.swift in Sources */,
 				3A22A1C71CCA28D200AC78DF /* SequenceExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
