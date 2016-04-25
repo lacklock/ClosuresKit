@@ -8,7 +8,7 @@
 
 import Foundation
 
-var CSNotificationHandlers = "CSNotificationHandlers"
+var CSNotificationHandlersKey = "CSNotificationHandlers"
 
 extension NSObject{
     
@@ -26,7 +26,7 @@ extension NSObject{
     }
     
     // MARK: - computed propery
-    var csNotificationHandlers:[String:csNotificationHandler]{
+    private var csNotificationHandlers:[String:csNotificationHandler]{
         get{
             return handlerContainer.handlers
         }
@@ -35,13 +35,13 @@ extension NSObject{
         }
     }
     
-    var handlerContainer:NotificationHandlerContainer{
+    private var handlerContainer:NotificationHandlerContainer{
         get{
-            if let container = cs_associateValueForKey(&CSNotificationHandlers) as? NotificationHandlerContainer {
+            if let container = cs_associateValueForKey(&CSNotificationHandlersKey) as? NotificationHandlerContainer {
                 return container
             }else{
                 let container = NotificationHandlerContainer()
-                cs_associateValue(container, key: &CSNotificationHandlers)
+                cs_associateValue(container, key: &CSNotificationHandlersKey)
                 return container
             }
         }

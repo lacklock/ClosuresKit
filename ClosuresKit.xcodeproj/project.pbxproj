@@ -15,6 +15,8 @@
 		3A22A1CB1CCD038500AC78DF /* AssocaitedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */; };
 		3A22A1CD1CCDEF1500AC78DF /* ObserverNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CC1CCDEF1500AC78DF /* ObserverNotificationExtension.swift */; };
 		3A22A1CF1CCDFDC600AC78DF /* ObserverNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CE1CCDFDC600AC78DF /* ObserverNotificationTests.swift */; };
+		3A22A1D11CCE035100AC78DF /* NSTimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1D01CCE035100AC78DF /* NSTimerExtension.swift */; };
+		3A22A1D31CCE0F4800AC78DF /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1D21CCE0F4800AC78DF /* TimerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssocaitedObjectTests.swift; sourceTree = "<group>"; };
 		3A22A1CC1CCDEF1500AC78DF /* ObserverNotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverNotificationExtension.swift; sourceTree = "<group>"; };
 		3A22A1CE1CCDFDC600AC78DF /* ObserverNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverNotificationTests.swift; sourceTree = "<group>"; };
+		3A22A1D01CCE035100AC78DF /* NSTimerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerExtension.swift; sourceTree = "<group>"; };
+		3A22A1D21CCE0F4800AC78DF /* TimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				3A22A1C31CCA226800AC78DF /* SequenceTypeExtension.swift */,
 				3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */,
 				3A22A1CC1CCDEF1500AC78DF /* ObserverNotificationExtension.swift */,
+				3A22A1D01CCE035100AC78DF /* NSTimerExtension.swift */,
 			);
 			path = ClosuresKit;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */,
 				3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */,
 				3A22A1CE1CCDFDC600AC78DF /* ObserverNotificationTests.swift */,
+				3A22A1D21CCE0F4800AC78DF /* TimerTests.swift */,
 			);
 			path = ClosuresKitTests;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A22A1D11CCE035100AC78DF /* NSTimerExtension.swift in Sources */,
 				3A22A1CD1CCDEF1500AC78DF /* ObserverNotificationExtension.swift in Sources */,
 				3A22A1C41CCA226800AC78DF /* SequenceTypeExtension.swift in Sources */,
 				3A22A1C91CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift in Sources */,
@@ -222,6 +229,7 @@
 				3A22A1CB1CCD038500AC78DF /* AssocaitedObjectTests.swift in Sources */,
 				3A22A1CF1CCDFDC600AC78DF /* ObserverNotificationTests.swift in Sources */,
 				3A22A1C71CCA28D200AC78DF /* SequenceExtensionTests.swift in Sources */,
+				3A22A1D31CCE0F4800AC78DF /* TimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
