@@ -11,15 +11,26 @@ import Foundation
 var CSTimerHandlerKey = "CSTimerHandlerKey"
 
 extension NSTimer{
-    public class func cs_timerWithtimeInterval(timeInterval:NSTimeInterval,repeats:Bool,userInfo:NSDictionary?,mode:String=NSDefaultRunLoopMode,handler:(timer:NSTimer)->Void)-> NSTimer {
+    
+    public class func cs_scheduledTimerWithTimeInterval(timeInterval:NSTimeInterval,repeats:Bool,userInfo:NSDictionary?,mode:String=NSDefaultRunLoopMode,handler:(timer:NSTimer)->Void)-> NSTimer {
         let timer = NSTimer(timeInterval: timeInterval, target: self, selector: #selector(NSTimer.__csTimerHandler), userInfo: userInfo, repeats: repeats)
-        timer.timeHandlerContainer.handler=handler
+        timer.handler=handler
         NSRunLoop.currentRunLoop().addTimer(timer, forMode: mode)
         return timer
     }
     
     public class func __csTimerHandler(timer:NSTimer){
-        timer.timeHandlerContainer.handler(timer: timer)
+        timer.handler(timer: timer)
+    }
+    
+    // MARK: - computed propery
+    private var handler:(timer:NSTimer)->Void{
+        get{
+            return timeHandlerContainer.handler
+        }
+        set{
+            timeHandlerContainer.handler=newValue
+        }
     }
     
     private var timeHandlerContainer:NSTimerHandlerContainer{

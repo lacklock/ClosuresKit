@@ -13,14 +13,9 @@ class TimerTests: XCTestCase {
 
     var count=0
     var timer:NSTimer?
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
 
-    func testExample() {
-        timer = NSTimer.cs_timerWithtimeInterval(1, repeats: false, userInfo: ["key":"value"]) {[unowned self] (timer) in
+    func testTimerWithtimeInterval() {
+        timer = NSTimer.cs_scheduledTimerWithTimeInterval(1, repeats: false, userInfo: ["key":"value"]) {[unowned self] (timer) in
             assert(timer.userInfo!["key"]=="value", #function)
             print("times:\(self.count)")
         }

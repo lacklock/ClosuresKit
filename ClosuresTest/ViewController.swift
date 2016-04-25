@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let timer = NSTimer.cs_timerWithtimeInterval(0.5, repeats: true, userInfo: nil) { (timer) in
+        let timer = NSTimer.cs_scheduledTimerWithTimeInterval(0.5, repeats: false, userInfo: nil) { (timer) in
             print("\(Int(NSDate().timeIntervalSince1970))")
         }
         timer.fire()
