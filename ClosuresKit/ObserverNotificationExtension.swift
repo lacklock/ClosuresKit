@@ -15,11 +15,11 @@ extension NSObject{
     public typealias csNotificationHandler = (notification:NSNotification)->Void
     
     public func cs_addNotificationObserverForName(name aName: String, object anObject: AnyObject?,handler:csNotificationHandler){
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(NSObject.__csNotificationHandler(_:)), name: aName, object: anObject)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(NSObject.notificationHandler(_:)), name: aName, object: anObject)
         csNotificationHandlers[aName]=handler
     }
     
-    public func __csNotificationHandler(notification:NSNotification){
+    func notificationHandler(notification:NSNotification){
         if let handler = csNotificationHandlers[notification.name]{
             handler(notification: notification)
         }

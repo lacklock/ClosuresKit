@@ -13,13 +13,13 @@ var CSTimerHandlerKey = "CSTimerHandlerKey"
 extension NSTimer{
     
     public class func cs_scheduledTimerWithTimeInterval(timeInterval:NSTimeInterval,repeats:Bool,userInfo:NSDictionary?,mode:String=NSDefaultRunLoopMode,handler:(timer:NSTimer)->Void)-> NSTimer {
-        let timer = NSTimer(timeInterval: timeInterval, target: self, selector: #selector(NSTimer.__csTimerHandler), userInfo: userInfo, repeats: repeats)
+        let timer = NSTimer(timeInterval: timeInterval, target: self, selector: #selector(NSTimer.timerHandler(_:)), userInfo: userInfo, repeats: repeats)
         timer.handler=handler
         NSRunLoop.currentRunLoop().addTimer(timer, forMode: mode)
         return timer
     }
     
-    public class func __csTimerHandler(timer:NSTimer){
+    class func timerHandler(timer:NSTimer){
         timer.handler(timer: timer)
     }
     
