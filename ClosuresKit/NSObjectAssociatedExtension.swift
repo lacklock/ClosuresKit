@@ -106,7 +106,7 @@ extension NSObject{
     
 
 // MARK: - get associate Value
-    public func cs_associateValueForKey(key:UnsafePointer<Void>)->AnyObject{
+    public func cs_associateValueForKey(key:UnsafePointer<Void>)->AnyObject?{
         let value = objc_getAssociatedObject(self, key)
         if value != nil && value is _CSWeakAssociatedObject{
             if let _value = (value as! _CSWeakAssociatedObject).value{
@@ -128,6 +128,14 @@ extension NSObject{
             }
         }
         return value
+    }
+    // MARK: - remove
+    public func cs_removeAllAssociatedObjects(){
+        objc_removeAssociatedObjects(self)
+    }
+    
+    public class func cs_removeAllAssociatedObjects(){
+        objc_removeAssociatedObjects(self)
     }
 }
 

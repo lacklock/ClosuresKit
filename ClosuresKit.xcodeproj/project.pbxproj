@@ -13,6 +13,8 @@
 		3A22A1C71CCA28D200AC78DF /* SequenceExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */; };
 		3A22A1C91CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */; };
 		3A22A1CB1CCD038500AC78DF /* AssocaitedObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */; };
+		3A22A1CD1CCDEF1500AC78DF /* ObserverNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CC1CCDEF1500AC78DF /* ObserverNotificationExtension.swift */; };
+		3A22A1CF1CCDFDC600AC78DF /* ObserverNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A1CE1CCDFDC600AC78DF /* ObserverNotificationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensionTests.swift; sourceTree = "<group>"; };
 		3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectAssociatedExtension.swift; sourceTree = "<group>"; };
 		3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssocaitedObjectTests.swift; sourceTree = "<group>"; };
+		3A22A1CC1CCDEF1500AC78DF /* ObserverNotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverNotificationExtension.swift; sourceTree = "<group>"; };
+		3A22A1CE1CCDFDC600AC78DF /* ObserverNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverNotificationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				3A22A1AE1CCA205000AC78DF /* Info.plist */,
 				3A22A1C31CCA226800AC78DF /* SequenceTypeExtension.swift */,
 				3A22A1C81CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift */,
+				3A22A1CC1CCDEF1500AC78DF /* ObserverNotificationExtension.swift */,
 			);
 			path = ClosuresKit;
 			sourceTree = "<group>";
@@ -88,9 +93,10 @@
 		3A22A1B71CCA205000AC78DF /* ClosuresKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A22A1BA1CCA205000AC78DF /* Info.plist */,
 				3A22A1C61CCA28D200AC78DF /* SequenceExtensionTests.swift */,
 				3A22A1CA1CCD038500AC78DF /* AssocaitedObjectTests.swift */,
-				3A22A1BA1CCA205000AC78DF /* Info.plist */,
+				3A22A1CE1CCDFDC600AC78DF /* ObserverNotificationTests.swift */,
 			);
 			path = ClosuresKitTests;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A22A1CD1CCDEF1500AC78DF /* ObserverNotificationExtension.swift in Sources */,
 				3A22A1C41CCA226800AC78DF /* SequenceTypeExtension.swift in Sources */,
 				3A22A1C91CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift in Sources */,
 			);
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A22A1CB1CCD038500AC78DF /* AssocaitedObjectTests.swift in Sources */,
+				3A22A1CF1CCDFDC600AC78DF /* ObserverNotificationTests.swift in Sources */,
 				3A22A1C71CCA28D200AC78DF /* SequenceExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

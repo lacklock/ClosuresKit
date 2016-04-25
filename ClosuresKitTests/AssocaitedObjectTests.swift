@@ -26,7 +26,6 @@ class AssocaitedObjectTests: XCTestCase {
         view.cs_associateValue(testString, key: &AssocaitedObjectTests.identifierCompare)
         let result = view.cs_associateValueForKey(&AssocaitedObjectTests.identifier) as! String
         assert(result==testString,"associateValue failed")
-
     }
     
     func testClassAssociateValue() {
