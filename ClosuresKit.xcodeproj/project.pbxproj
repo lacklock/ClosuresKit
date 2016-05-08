@@ -26,6 +26,10 @@
 		3A22A1F91CCE1B6000AC78DF /* ClosuresKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A22A1A91CCA205000AC78DF /* ClosuresKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A22A2021CCE5B6600AC78DF /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A2011CCE5B6600AC78DF /* UIControlExtension.swift */; };
 		3A22A2041CCE753F00AC78DF /* UIControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A2031CCE753F00AC78DF /* UIControlViewController.swift */; };
+		3A42CF4E1CDF92FA0048C58F /* CSGesturePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42CF4D1CDF92FA0048C58F /* CSGesturePromise.swift */; };
+		3A42CF521CDF95810048C58F /* UIGesturePromiseExntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42CF511CDF95810048C58F /* UIGesturePromiseExntension.swift */; };
+		3A42CF541CDFA5BD0048C58F /* UIGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42CF531CDFA5BD0048C58F /* UIGestureViewController.swift */; };
+		3A42CF561CDFA7620048C58F /* GestureUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42CF551CDFA7620048C58F /* GestureUIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,10 @@
 		3A22A1F11CCE1B4F00AC78DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A22A2011CCE5B6600AC78DF /* UIControlExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
 		3A22A2031CCE753F00AC78DF /* UIControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlViewController.swift; sourceTree = "<group>"; };
+		3A42CF4D1CDF92FA0048C58F /* CSGesturePromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSGesturePromise.swift; sourceTree = "<group>"; };
+		3A42CF511CDF95810048C58F /* UIGesturePromiseExntension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGesturePromiseExntension.swift; sourceTree = "<group>"; };
+		3A42CF531CDFA5BD0048C58F /* UIGestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureViewController.swift; sourceTree = "<group>"; };
+		3A42CF551CDFA7620048C58F /* GestureUIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureUIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 		3A22A1AB1CCA205000AC78DF /* ClosuresKit */ = {
 			isa = PBXGroup;
 			children = (
+				3A42CF4A1CDF8DFF0048C58F /* UIGesture */,
 				3A22A1FD1CCE2F0000AC78DF /* Foundation */,
 				3A22A1FE1CCE2F0C00AC78DF /* UIKit */,
 				3A22A1AC1CCA205000AC78DF /* ClosuresKit.h */,
@@ -177,6 +186,7 @@
 			children = (
 				3A22A1DE1CCE1B4F00AC78DF /* Main.storyboard */,
 				3A22A2031CCE753F00AC78DF /* UIControlViewController.swift */,
+				3A42CF531CDFA5BD0048C58F /* UIGestureViewController.swift */,
 				3A22A2051CCE754500AC78DF /* Others */,
 			);
 			path = ClosuresTest;
@@ -219,6 +229,16 @@
 				3A22A1E61CCE1B4F00AC78DF /* Info.plist */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		3A42CF4A1CDF8DFF0048C58F /* UIGesture */ = {
+			isa = PBXGroup;
+			children = (
+				3A42CF4D1CDF92FA0048C58F /* CSGesturePromise.swift */,
+				3A42CF511CDF95810048C58F /* UIGesturePromiseExntension.swift */,
+				3A42CF551CDFA7620048C58F /* GestureUIViewExtension.swift */,
+			);
+			name = UIGesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,7 +417,10 @@
 				3A22A1CD1CCDEF1500AC78DF /* ObserverNotificationExtension.swift in Sources */,
 				3A22A1C41CCA226800AC78DF /* SequenceTypeExtension.swift in Sources */,
 				3A22A1C91CCCFB3800AC78DF /* NSObjectAssociatedExtension.swift in Sources */,
+				3A42CF561CDFA7620048C58F /* GestureUIViewExtension.swift in Sources */,
+				3A42CF521CDF95810048C58F /* UIGesturePromiseExntension.swift in Sources */,
 				3A22A2021CCE5B6600AC78DF /* UIControlExtension.swift in Sources */,
+				3A42CF4E1CDF92FA0048C58F /* CSGesturePromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +441,7 @@
 			files = (
 				3A22A2041CCE753F00AC78DF /* UIControlViewController.swift in Sources */,
 				3A22A1DB1CCE1B4F00AC78DF /* AppDelegate.swift in Sources */,
+				3A42CF541CDFA5BD0048C58F /* UIGestureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

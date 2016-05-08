@@ -12,12 +12,12 @@ var CSControlEventsHandlerKey = "CSControlEventsHandlerKey"
 
 extension UIControl{
     
-    typealias CSEventContainerDict = [String:CSIControlHandlerContainer]
+    typealias CSEventContainerDict = [String:CSControlHandlerContainer]
     
     public func cs_addEventHandlerForEvents(event:UIControlEvents,handler:(sender:UIControl)->Void){
-        let container = CSIControlHandlerContainer(handler: handler)
+        let container = CSControlHandlerContainer(handler: handler)
         handlers[event.cs_hashValue]=container
-        addTarget(container, action: #selector(CSIControlHandlerContainer.invoke(_:)),forControlEvents: event)
+        addTarget(container, action: #selector(CSControlHandlerContainer.invoke(_:)),forControlEvents: event)
     }
     
     var handlers:CSEventContainerDict{
@@ -25,7 +25,7 @@ extension UIControl{
             if let container = cs_associateValueForKey(&CSControlEventsHandlerKey) as? CSEventContainerDict {
                 return container
             }else{
-                let container = [String:CSIControlHandlerContainer]()
+                let container = [String:CSControlHandlerContainer]()
                 cs_associateValue(container, key: &CSControlEventsHandlerKey)
                 return container
             }
@@ -37,7 +37,7 @@ extension UIControl{
     
 }
 
-class CSIControlHandlerContainer:NSObject{
+class CSControlHandlerContainer:NSObject{
     var handler:(UIControl)->Void = { _ in }
 
     init(handler:(sender:UIControl)->Void) {
