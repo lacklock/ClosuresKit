@@ -9,7 +9,7 @@ This project is heavily inspired by the popular [BlocksKit](https://github.com/z
 #Installation
 
 ###Carthage
-<code>github "github "lacklock/ClosuresKit""</code>
+<code>github "lacklock/ClosuresKit"</code>
 
 #Contact
 
