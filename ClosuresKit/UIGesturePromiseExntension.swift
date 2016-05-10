@@ -38,3 +38,23 @@ extension UITapGestureRecognizer:CSGesturePromisable{
     
 }
 
+extension UILongPressGestureRecognizer:CSGesturePromisable{
+    
+}
+
+extension UIPanGestureRecognizer:CSGesturePromisable{
+    
+}
+
+extension UISwipeGestureRecognizer:CSGesturePromisable{
+    
+}
+
+extension UIRotationGestureRecognizer:CSGesturePromisable{
+    
+}
+
+extension UIPinchGestureRecognizer:CSGesturePromisable{
+    
+}
+

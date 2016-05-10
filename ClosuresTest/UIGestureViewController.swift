@@ -15,11 +15,12 @@ class UIGestureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.cs_addTapGestureWithConfigClosure { (tapGestureRecognizer) in
-            
-        }.whenEnded { (gestureRecognizer) in
-            print("whenEnded")
-
+        label.cs_whenTapped { (tapGestureRecognizer) in
+            print("tapped")
+        }
+        
+        view.cs_whenSwipedInDirection(.Down) { (gestureRecognizer) in
+            print("down")
         }
     }
 
