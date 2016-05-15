@@ -49,6 +49,71 @@ class AssocaitedObjectTests: XCTestCase {
 }
 ```
 这是单元测试中写的一个关联对象策略用copy的示例代码。
+####通知
+可以通过<code>cs_addNotificationObserverForName</code>方便的添加对某个通知的处理:
+```swift
+ func testObserverNotification() {
+        let notificationName = "Test"
+        cs_addNotificationObserverForName(name: "Test", object: nil) { (notification) in
+            assert(notification.userInfo!["value"] as! String == "param",#function)
+        }
+        NSNotificationCenter.defaultCenter().postNotificationName(notificationName, object: self,userInfo:["value":"param"])
+    }
+
+```
+####NSTimer
+可以在添加timer时传入闭包直接处理回调。示例代码：
+```swift
+    var count=0
+    var timer:NSTimer?
+
+    func testTimerWithtimeInterval() {
+        timer = NSTimer.cs_scheduledTimerWithTimeInterval(1, repeats: false, userInfo: ["key":"value"]) {[unowned self] (timer) in
+            assert(timer.userInfo!["key"]=="value", #function)
+            print("times:\(self.count)")
+        }
+        timer!.fire()
+    }
+```
+###UIKIt
+给UIControl加了一个方便处理UIControlEvents的方法<code>cs_addEventHandlerForEvents</code>，示例如下：
+```swift
+   btn.cs_addEventHandlerForEvents(.TouchUpInside) { (sender) in
+            print("TouchUpInside")
+        }
+```
+###UIGesture
+可以给UIView方便的直接添加手势，支持链式编程，可以在添加手势时那个闭包里配置，连续处理几种不同的状态：
+```swift
+     label.cs_addPanGesture { (gestureRecognizer) in
+            gestureRecognizer.maximumNumberOfTouches=2
+        }.whenBegan { (gestureRecognizer) in
+            print("began")
+        }
+```
+如果不用配置，配置的闭包可以直接为空：
+```swift
+       label.cs_addPanGesture().whenChanged { (gestureRecognizer) in
+            print("changed")
+        }
+```
+也可以同时给几个状态添加同一个处理闭包：
+```swift
+lbState.nc_addPanGesture().whenStatesHappend([.Ended,.Changed]) { (gestureRecognizer) -> Void in
+            
+        }
+```
+还给tap和swipe添加了两个快捷的处理方法：
+```swift
+    label.cs_whenTapped { (tapGestureRecognizer) in
+            print("tapped")
+        }
+        
+     view.cs_whenSwipedInDirection(.Down) { (gestureRecognizer) in
+            print("down")
+        }
+```
+目前想到的api就这些，如果有需要添加的可以直接提到issue里，我会及时处理的，也欢迎直接提pull request。
 
 #Installation
 
