@@ -19,6 +19,10 @@ extension NSObject{
         csNotificationHandlers[aName]=handler
     }
     
+    public func cs_removeNotificationObserverForName(name aName:String){
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: aName, object: nil)
+    }
+    
     func notificationHandler(notification:NSNotification){
         if let handler = csNotificationHandlers[notification.name]{
             handler(notification: notification)
