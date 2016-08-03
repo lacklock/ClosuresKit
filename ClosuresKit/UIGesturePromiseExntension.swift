@@ -12,7 +12,7 @@ public protocol CSGesturePromisable:class {
     init(target: AnyObject?, action: Selector)
 }
 
-var CSGesturePromisableKey = "CSGesturePromisableKey"
+private var CSGesturePromisableKey = "CSGesturePromisableKey"
 
 extension CSGesturePromisable where Self:UIGestureRecognizer{
     

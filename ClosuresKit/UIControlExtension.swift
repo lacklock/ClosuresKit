@@ -8,7 +8,7 @@
 
 import Foundation
 
-var CSControlEventsHandlerKey = "CSControlEventsHandlerKey"
+private var CSControlEventsHandlerKey = "CSControlEventsHandlerKey"
 
 extension UIControl{
     

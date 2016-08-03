@@ -8,7 +8,7 @@
 
 import Foundation
 
-var CSTimerHandlerKey = "CSTimerHandlerKey"
+private var CSTimerHandlerKey = "CSTimerHandlerKey"
 
 extension NSTimer{
     

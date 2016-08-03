@@ -8,7 +8,7 @@
 
 import Foundation
 
-var CSNotificationHandlersKey = "CSNotificationHandlers"
+private var CSNotificationHandlersKey = "CSNotificationHandlers"
 
 extension NSObject{
     
